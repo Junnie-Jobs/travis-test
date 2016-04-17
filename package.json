@@ -6,14 +6,19 @@
   "scripts": {
     "csslint": "node node_modules/csslint/cli css",
     "jshint": "node node_modules/jshint/bin/jshint js",
-    "test": "node ./node_modules/karma-cli/bin/karma start",
-    "build": "npm run csslint && npm run jshint && npm run test"
+    "karma": "node ./node_modules/karma-cli/bin/karma start",
+    "test": "node node_modules/grunt-cli/bin/grunt"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.5.0",
     "csslint": "^0.10.0",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-csslint": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-karma": "^0.12.2",
     "jshint": "^2.9.1",
     "karma": "^0.13.22",
     "karma-chai": "^0.1.0",
